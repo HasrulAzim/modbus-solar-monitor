@@ -1,0 +1,69 @@
+##############################################################################
+#
+#                     Makefile for sql_LV.so
+#
+##############################################################################
+
+# This variable contains the flags passed to cc.
+
+CC = gcc
+CFLAGS = -m32 -fPIC -Di686 -g
+INCLUDES = -I/usr/include/mysql/ -I/usr/local/lv71/cintools
+MYSQL_LIB=/usr/lib/libmysql56client.so.18
+ORACLE_LIB=-L/usr/lib/oracle/12.2/client/lib/ -locci -lclntsh
+LABVIEW_LIB=/usr/local/lv71/AppLibs/liblvrt.so.7.1
+LIBS = $(MYSQL_LIB) $(LABVIEW_LIB)
+
+ifeq ($(ORACLE),1)
+  CFLAGS += -DHAVE_ORACLE
+  INCLUDES += -I/usr/include/oracle/12.2/client
+  LIBS += $(ORACLE_LIB)
+endif
+
+ifeq ($(ODBC),1)
+  CFLAGS += -DHAVE_ODBC
+  LIBS += /usr/lib/libodbc.so
+endif
+
+OBJ = o
+SUFFIX = so
+#  DLLFLAGS = -shared -W1,-soname,$@
+DLLFLAGS = -shared -m32
+.SUFFIXES:
+.SUFFIXES: .c .o .so
+
+OBJECTS = sql_LV.$(OBJ)
+
+
+
+# This variable points to the directory containing the X libraries.
+
+LIBDIR = /usr/X11R6/lib
+
+.c:
+	$(CC) $(CFLAGS) $(INCLUDES) -o $@ $< $(LIBS)
+
+.c.o: 
+	$(CC) $(INCLUDES) -c $(CFLAGS) $<
+
+.c.obj: 
+	$(CC) $(INCLUDES) -c $(CFLAGS) $<
+
+all:    sql_LV.$(SUFFIX)
+
+sql_LV.so:    $(OBJECTS)
+	$(CC) $(DLLFLAGS) -o $@ $(OBJECTS) $(LIBS)
+
+sql_LV.dll:    $(OBJECTS)
+	$(LINKER) $(DLLFLAGS) $(OBJECTS) $(LIBS)
+
+clean:
+	 rm -f\
+	 sql_LV.$(SUFFIX) *.$(OBJ)
+
+dist:
+	 tar cvfz sql_LV.tgz *.c *.h Makefile *.llb
+
+test:    sql_LV.$(SUFFIX)
+	 $(CC) test.c $(CFLAGS) -o test sql_LV.$(SUFFIX)
+

@@ -1,0 +1,14 @@
+﻿  sql_LV.c
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(448): warning C4244: '=': conversion from 'my_ulonglong' to 'long', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(586): warning C4244: '=': conversion from 'my_ulonglong' to 'long', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(652): warning C4244: '+=': conversion from 'my_ulonglong' to 'long', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(723): warning C4244: '+=': conversion from 'my_ulonglong' to 'long', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(1080): warning C4267: 'function': conversion from 'size_t' to 'SQLSMALLINT', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(1082): warning C4267: 'function': conversion from 'size_t' to 'SQLSMALLINT', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(1165): warning C4267: 'function': conversion from 'size_t' to 'SQLSMALLINT', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(1170): warning C4477: 'sprintf' : format string '%s' requires an argument of type 'char *', but variadic argument 3 has type 'unsigned long *'
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(1171): warning C4267: 'function': conversion from 'size_t' to 'SQLSMALLINT', possible loss of data
+c:\users\dholstei\src\sql-lv-1.10\sql_lv.c(1178): warning C4267: 'function': conversion from 'size_t' to 'SQLSMALLINT', possible loss of data
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/OPT:ICF' specification
+     Creating library C:\Users\dholstei\src\sql-LV-1.10\msvc\Release\sql_LV.lib and object C:\Users\dholstei\src\sql-LV-1.10\msvc\Release\sql_LV.exp
+  sql_LV.vcxproj -> C:\Users\dholstei\src\sql-LV-1.10\msvc\Release\sql_LV.dll

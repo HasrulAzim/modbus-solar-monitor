@@ -1,0 +1,52 @@
+Author: Danny Holstein
+email: dgholstein@gmail.com
+
+These VIs provide C-based DLL access to SQL-based databases. The VIs and development files are included in this package.
+
+There is no difference between the Windows and Linux version of this library, the VIs are identical, the DLLs compiled from the same source.  The LabView user may choose to use either compile his own dynamic library, sql_LV.so, or select the pre-compiled versions.
+
+Prerequisites:
+	LabView 7.1+
+Optional: (SDKs, headers and libraries)
+	MySQL Client DLLs (native to Linux version)
+	ODBC/unixODBC (native to Windows version)
+	OCI/Oracle InstantClient
+	
+Notes:
+	The library may be downsaved, I've done it to LabView 6.0. Haven't had any issues saving it to the latest versions of LabView
+
+	Version 1.12
+		fixed mysql_store_result() bug where I didn't check the results for error. (think, "Subquery returns more than 1 row")
+		 - syntactically correct, but empty result set, which caused an unexplained/unhandled crash
+
+	Version 1.11
+		MySQL API function is now optional.
+		Oracle OCI support added (no binary data, though you can convert to binhex)
+		TCP/IP alternate port supported. Add ":port" to host addess where port is a 4 digit number designating the port
+		DB Cluster made into LabView Control (CTL) with asterisks for the password
+		Downsaved to 7.1
+
+	Version 1.10
+		updated to LabView 14, Windows 8.  You will likely have to compile the Linux DLL (.so) for your distribution.
+		created a MS Visual Studio project
+		
+	Version 1.09
+		now includes some XML export code
+		modified update VI, takes clusters for input data (not just strings anymore).
+		conversion modified to (F) for "use system decimal"
+
+Make (Linux):
+	Edit Makefile.unix, make sure the library paths for LabView, MySQL, GL and (optionally) unixODBC are correct.
+	Build with "make -f Makefile.unix" to make the MySQL-only version.
+Options:
+	Append to above;
+	" ODBC=1" to add ODBC
+	" ORACLE=1" to add OCI/Oracle
+	
+Make (Windows):
+	Edit Makefile.mak, make sure the library paths for LabView, MySQL, and optional functions are correct.
+	Build with "nmake -f Makefile.mak"
+	Note: ODBC turned on automatically for Windows build
+
+64-bit:
+	You're on your own -- I only have worked with 32 bit versions of LabView.  Contact me if you have difficulty, I'll help where I can.
