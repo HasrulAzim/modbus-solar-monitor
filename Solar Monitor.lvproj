@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="20008000">
+<Project Type="Project" LVVersion="19008000">
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -14,21 +14,6 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="user.lib" Type="Folder">
-				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
-				<Item Name="Get Data Name from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name from TD__ogtk.vi"/>
-				<Item Name="Get Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name__ogtk.vi"/>
-				<Item Name="Get Header from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Header from TD__ogtk.vi"/>
-				<Item Name="Get Last PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Last PString__ogtk.vi"/>
-				<Item Name="Get PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get PString__ogtk.vi"/>
-				<Item Name="Get Strings from Enum TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Strings from Enum TD__ogtk.vi"/>
-				<Item Name="Get Strings from Enum__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Strings from Enum__ogtk.vi"/>
-				<Item Name="Set Control Value {Variant}__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/appcontrol/appcontrol.llb/Set Control Value {Variant}__ogtk.vi"/>
-				<Item Name="Type Descriptor Enumeration__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Enumeration__ogtk.ctl"/>
-				<Item Name="Type Descriptor Header__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Header__ogtk.ctl"/>
-				<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
-				<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="API Main.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI/Modbus Library/API/Wrapper/API Main.lvlib"/>
@@ -120,12 +105,20 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
+			<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
+			<Item Name="Get Data Name from TD__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Data Name from TD__ogtk.vi"/>
+			<Item Name="Get Data Name__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Data Name__ogtk.vi"/>
+			<Item Name="Get Header from TD__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Header from TD__ogtk.vi"/>
+			<Item Name="Get Last PString__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Last PString__ogtk.vi"/>
+			<Item Name="Get PString__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get PString__ogtk.vi"/>
+			<Item Name="Get Strings from Enum TD__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Strings from Enum TD__ogtk.vi"/>
+			<Item Name="Get Strings from Enum__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Get Strings from Enum__ogtk.vi"/>
+			<Item Name="Set Control Value {Variant}__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/appcontrol/appcontrol.llb/Set Control Value {Variant}__ogtk.vi"/>
 			<Item Name="sql_close.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_close.vi"/>
 			<Item Name="sql_cmd (db cluster).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_cmd (db cluster).vi"/>
 			<Item Name="sql_cmd (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_cmd (db ref).vi"/>
 			<Item Name="sql_cmd.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_cmd.vi"/>
 			<Item Name="sql_cmd_resp (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_cmd_resp (db ref).vi"/>
-			<Item Name="sql_cmd_response.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_cmd_response.vi"/>
 			<Item Name="sql_columns (db cluster).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_columns (db cluster).vi"/>
 			<Item Name="sql_columns (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_columns (db ref).vi"/>
 			<Item Name="sql_columns.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_columns.vi"/>
@@ -133,7 +126,7 @@
 			<Item Name="sql_delete (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_delete (db ref).vi"/>
 			<Item Name="sql_delete.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_delete.vi"/>
 			<Item Name="sql_error.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_error.vi"/>
-			<Item Name="sql_info.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_info.vi"/>
+			<Item Name="sql_info.vi" Type="VI" URL="../../../../../../../&lt;userlib&gt;/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_info.vi"/>
 			<Item Name="sql_insert.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_insert.vi"/>
 			<Item Name="sql_insert_clust (db cluster).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_insert_clust (db cluster).vi"/>
 			<Item Name="sql_insert_clust (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_insert_clust (db ref).vi"/>
@@ -142,7 +135,7 @@
 			<Item Name="sql_select_clust (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_select_clust (db ref).vi"/>
 			<Item Name="sql_select_str (db cluster).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_select_str (db cluster).vi"/>
 			<Item Name="sql_table_XML.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_table_XML.vi"/>
-			<Item Name="sql_table_XML_sub.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_table_XML_sub.vi"/>
+			<Item Name="sql_table_XML_sub.vi" Type="VI" URL="../../../../../../../&lt;userlib&gt;/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_table_XML_sub.vi"/>
 			<Item Name="sql_tables (db cluster).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_tables (db cluster).vi"/>
 			<Item Name="sql_tables (db_ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_tables (db_ref).vi"/>
 			<Item Name="sql_tables.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_tables.vi"/>
@@ -152,6 +145,10 @@
 			<Item Name="sql_update_clust (db cluster).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_update_clust (db cluster).vi"/>
 			<Item Name="sql_update_clust (db ref).vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_instances.llb/sql_update_clust (db ref).vi"/>
 			<Item Name="sql_XML.vi" Type="VI" URL="../HMI/SubVI/Database/sql_LV-1.12-LabView14 -ORA-MySQL/sql_LV-1.12/sql_LV_plus.llb/sql_XML.vi"/>
+			<Item Name="Type Descriptor Enumeration__ogtk.ctl" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Enumeration__ogtk.ctl"/>
+			<Item Name="Type Descriptor Header__ogtk.ctl" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor Header__ogtk.ctl"/>
+			<Item Name="Type Descriptor__ogtk.ctl" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Type Descriptor__ogtk.ctl"/>
+			<Item Name="Variant to Header Info__ogtk.vi" Type="VI" URL="../../../../../../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/lvdata/lvdata.llb/Variant to Header Info__ogtk.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="SM Installer" Type="Installer">
@@ -160,61 +157,19 @@
 				<Property Name="Destination[0].tag" Type="Str">{75667EF3-469D-4770-B47D-A32341E7A38C}</Property>
 				<Property Name="Destination[0].type" Type="Str">userFolder</Property>
 				<Property Name="DestinationCount" Type="Int">1</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{BD841C5A-94E5-4DA5-9505-2B90212D19C1}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 f1</Property>
-				<Property Name="DistPart[0].SoftDep[0].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[0].productName" Type="Str">NI ActiveX Container</Property>
-				<Property Name="DistPart[0].SoftDep[0].upgradeCode" Type="Str">{1038A887-23E1-4289-B0BD-0C4B83C6BA21}</Property>
-				<Property Name="DistPart[0].SoftDep[1].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[1].productName" Type="Str">NI Deployment Framework 2020</Property>
-				<Property Name="DistPart[0].SoftDep[1].upgradeCode" Type="Str">{838942E4-B73C-492E-81A3-AA1E291FD0DC}</Property>
-				<Property Name="DistPart[0].SoftDep[10].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[10].productName" Type="Str">NI VC2015 Runtime</Property>
-				<Property Name="DistPart[0].SoftDep[10].upgradeCode" Type="Str">{D42E7BAE-6589-4570-B6A3-3E28889392E7}</Property>
-				<Property Name="DistPart[0].SoftDep[11].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[11].productName" Type="Str">NI TDM Streaming 19.0</Property>
-				<Property Name="DistPart[0].SoftDep[11].upgradeCode" Type="Str">{4CD11BE6-6BB7-4082-8A27-C13771BC309B}</Property>
-				<Property Name="DistPart[0].SoftDep[2].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[2].productName" Type="Str">NI Error Reporting 2020</Property>
-				<Property Name="DistPart[0].SoftDep[2].upgradeCode" Type="Str">{42E818C6-2B08-4DE7-BD91-B0FD704C119A}</Property>
-				<Property Name="DistPart[0].SoftDep[3].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[3].productName" Type="Str">NI LabVIEW Real-Time NBFifo 2020</Property>
-				<Property Name="DistPart[0].SoftDep[3].upgradeCode" Type="Str">{00D0B680-F876-4E42-A25F-52B65418C2A6}</Property>
-				<Property Name="DistPart[0].SoftDep[4].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[4].productName" Type="Str">NI LabVIEW Runtime 2020 SP1 Non-English Support.</Property>
-				<Property Name="DistPart[0].SoftDep[4].upgradeCode" Type="Str">{61FCC73D-8092-457D-8905-27C0060D88E1}</Property>
-				<Property Name="DistPart[0].SoftDep[5].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[5].productName" Type="Str">NI Logos 20.0</Property>
-				<Property Name="DistPart[0].SoftDep[5].upgradeCode" Type="Str">{5E4A4CE3-4D06-11D4-8B22-006008C16337}</Property>
-				<Property Name="DistPart[0].SoftDep[6].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[6].productName" Type="Str">NI LabVIEW Web Server 2020</Property>
-				<Property Name="DistPart[0].SoftDep[6].upgradeCode" Type="Str">{0960380B-EA86-4E0C-8B57-14CD8CCF2C15}</Property>
-				<Property Name="DistPart[0].SoftDep[7].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[7].productName" Type="Str">NI mDNS Responder 19.0</Property>
-				<Property Name="DistPart[0].SoftDep[7].upgradeCode" Type="Str">{9607874B-4BB3-42CB-B450-A2F5EF60BA3B}</Property>
-				<Property Name="DistPart[0].SoftDep[8].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[8].productName" Type="Str">Math Kernel Libraries 2017</Property>
-				<Property Name="DistPart[0].SoftDep[8].upgradeCode" Type="Str">{699C1AC5-2CF2-4745-9674-B19536EBA8A3}</Property>
-				<Property Name="DistPart[0].SoftDep[9].exclude" Type="Bool">false</Property>
-				<Property Name="DistPart[0].SoftDep[9].productName" Type="Str">Math Kernel Libraries 2020</Property>
-				<Property Name="DistPart[0].SoftDep[9].upgradeCode" Type="Str">{9872BBBA-FB96-42A4-80A2-9605AC5CBCF1}</Property>
-				<Property Name="DistPart[0].SoftDepCount" Type="Int">12</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{D84FC73F-D1E0-4C05-A30C-DB882CD1ABD8}</Property>
-				<Property Name="DistPartCount" Type="Int">1</Property>
 				<Property Name="INST_author" Type="Str">VISI Sdn Bhd</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
 				<Property Name="INST_buildLocation" Type="Path">../builds/Solar Monitor/SM Installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">SM Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{75667EF3-469D-4770-B47D-A32341E7A38C}</Property>
+				<Property Name="INST_includeError" Type="Bool">false</Property>
 				<Property Name="INST_installerName" Type="Str">install.exe</Property>
 				<Property Name="INST_productName" Type="Str">Solar Monitor</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.2</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.6</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
-				<Property Name="InstSpecVersion" Type="Str">20018007</Property>
+				<Property Name="InstSpecVersion" Type="Str">19018009</Property>
 				<Property Name="MSI_arpCompany" Type="Str">VISI Sdn Bhd</Property>
-				<Property Name="MSI_autoselectDrivers" Type="Bool">true</Property>
 				<Property Name="MSI_distID" Type="Str">{7E76B2FE-1253-4336-8700-C1E66E5594F2}</Property>
 				<Property Name="MSI_hideNonRuntimes" Type="Bool">true</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
@@ -242,7 +197,6 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{B65FE1D5-E9DF-4623-914D-559DB3D6AE06}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{A5B2293E-1C16-4D91-88DB-8DF9C2101963}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{483A70E3-D7AD-460D-95E4-8BABB71CA89A}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Solar Monitor</Property>
@@ -253,7 +207,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{431A364A-4248-4AB7-8698-6990926E4F70}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">55</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Solar Monitor.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Solar Monitor/Solar Monitor.exe</Property>
@@ -261,16 +215,20 @@
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Solar Monitor/Config</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{6DE080DF-6C2C-4E88-9B52-D6A5A3906DF9}</Property>
+				<Property Name="Destination[2].destName" Type="Str">Module</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Solar Monitor/Module</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/My Computer/HMI/Resource/icons8_Summer.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{AD8D6EB7-5D1A-4132-9DFD-D50B2CDD9DF7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/HMI/Main HMI.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/HMI/Module</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
